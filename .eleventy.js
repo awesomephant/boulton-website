@@ -9,8 +9,8 @@ module.exports = function (eleventyConfig) {
     filename = '/assets/images/' + filename;
     return (
       `<picture>
-        <source type="image/jpeg" srcset="${filename}@1000w.jpg 1000w, ${filename}@2000w.jpg 2000w" alt="${image.alt}">
         <source type="image/webp" srcset="${filename}@1000w.webp 1000w, ${filename}@2000w.webp 2000w" alt="${image.alt}">
+        <source type="image/jpeg" srcset="${filename}@1000w.jpg 1000w, ${filename}@2000w.jpg 2000w" alt="${image.alt}">
         <img src="${filename}.${extension}" alt="${image.alt}">
       </picture>`
       );
