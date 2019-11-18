@@ -8,6 +8,8 @@ featured-images:
         width: 100
 ---
 
+{% image src="test.jpg", alt="hello" %}
+
 <img data-align="left" src="/assets/images/OLIVER_BOULTON_A_GLIB_REMARK_6.jpg" width="100%" alt="" />
 <img data-align="left" src="/assets/images/OLIVER_BOULTON_A_GLIB_REMARK_7.jpg" width="100%" alt="" />
 <img data-align="left" src="/assets/images/OLIVER_BOULTON_A_GLIB_REMARK_8.jpg" width="100%" alt="" />
