@@ -1,0 +1,34 @@
+---
+layout: base.njk
+bodyClass: home
+---
+
+<header class="site-header">
+	<a class="active" href="mailto:studio@oliverboulton.com">Oliver Boulton (1991, UK)</a>
+	<a class='randomLink' href='#'>ξ</a></li>
+</header>
+
+<ul class="posts">
+
+	{% for post in collections.project %}
+
+	<li class='post'>
+		{% if post.data.file %}
+		<a class='post-title button' href='{{post.data.file}}' id='toggle-content'><h2>{{post.data.title}}. {{post.data.subtitle}}</h2></a>
+		{% else %}
+		<a class='post-title button' href='{{post.url}}' id='toggle-content'><h2>{{post.data.title}}. {{post.data.subtitle}}</h2></a>
+		{% endif %}
+		<div class="post-images">
+			{% for image in post.data.featured-images %}
+			{% if post.data.file %}
+			<a href="{{post.data.file}}"><img width="{{image.width}}%" class="post-list-image" src="/assets/images/{{image.url}}" alt="" /></a>
+			{% else %}
+			<a href="{{post.url}}"><img width="{{image.width}}%" class="post-list-image" src="/assets/images/{{image.url}}" alt="" /></a>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</li>
+	{% endfor %}
+</ul>
+
+</html>

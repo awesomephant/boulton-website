@@ -1,0 +1,223 @@
+* {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple: purple;
+  --pink: #ff8ed3;
+  --cream: #d7d5d6;
+  --lightgray: #ebeaea;
+  --brown: #392e32;
+  --margin: 15px;
+
+}
+
+@font-face {
+  font-family: LudwigPro-Normal;
+  Src: url("/assets/fonts/LifeLTStd-Roman.otf");
+}
+
+@keyframes color {
+  0% {
+    background-color: var(--brown);
+  }
+
+  100% {
+    background-color: var(--lightgray);
+  }
+}
+
+
+body {
+  background-color: var(--brown);
+  padding: var(--margin);
+  font-family: "LudwigPro-Normal";
+}
+
+body.home {animation: color 8s alternate infinite;}
+body.project {animation: color 3s reverse;}
+
+
+/* unvisited link */
+a:link {
+  color: purple;
+  text-shadow: 0 0 12.5px purple;
+  padding: 0 0 0.2 0;
+  transition: .2s ease-in-out;
+
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+  transition: .2s ease-in-out;
+}
+
+/* mouse over link */
+a:hover {
+  color: #d7d5d6;
+  text-shadow: 0 0 12.5px #d7d5d6;
+  transition: .2s ease-in-out;
+}
+
+/* selected link */
+a:active {
+  color: purple;
+  transition: .2s ease-in-out;
+}
+
+p {
+  text-align: left;
+  font-weight: normal;
+  text-align: left;
+  hyphens: none;
+  text-justify: inter-word;
+  font-size: 15.3px;
+  font-family: "LudwigPro-Normal";
+  color: var(--lightgray);
+  max-width: 30em;
+  margin-bottom: .8em;
+}
+
+a.external:link {
+  padding: 7 0 0 8px;
+  color: #d7d5d6;
+  font-size: 15.3px;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+a.external:visited {
+  padding: 7 0 0 8px;
+  color: #d7d5d6;
+  font-size: 15.3px;
+  font-weight: normal;
+  text-shadow: none;
+}
+
+a.external:hover {
+  padding: 7 0 0 8px;
+  padding: 7 0 0 8px;
+  text-shadow: none;
+  color: #d7d5d6;
+}
+
+a.external:active {
+  padding: 7 0 0 8px;
+  color: #d7d5d6;
+}
+
+.site-footer {
+  position: fixed;
+  cursor: default;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  font-family: "LudwigPro-Normal";
+  margin: 0 0 0 0;
+  padding: 11 0 0 17px;
+  font-size: 15.3px;
+  color: #d7d5d6
+}
+
+#panel {
+  padding: 0 0 0 0px;
+  display: none;
+  font-style: normal;
+  font-size: 15.3px;
+  background-color: #fff;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.post {
+  list-style: none;
+}
+
+.post-title {
+  color: var(--purple);
+  text-decoration: none;
+  text-shadow: 15px;
+  font-size: 15.3px;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  transition: .2s ease-in-out;
+  padding-left: var(--margin);
+  margin-bottom: var(--margin);
+  display: block;
+  top: var(--margin);
+  position: sticky;
+}
+
+.post-title h1,
+.post-title h2,
+.post-title h3 {
+  display: inline-block;
+}
+
+.post-list-image {
+  max-width: 100%;
+  display: block;
+  margin-bottom: var(--margin);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--margin);
+  padding-bottom: 9rem;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: var(--purple);
+  font-size: 15.3px;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+}
+
+.single-post--header {
+  color: var(--cream);
+  padding-top: var(--margin);
+}
+
+.single-post--content {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 4rem;
+}
+
+.single-post--content [data-align='left'] {
+  align-self: flex-start;
+}
+
+.single-post--content [data-align='right'] {
+  align-self: flex-end;
+}
+
+.single-post--content [data-align='center'] {
+  align-self: center;
+}
+
+.single-post--content img {
+  margin-bottom: var(--margin);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--margin);
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 20.5px 0 var(--pink);
+  font-size: 20px;
+}
