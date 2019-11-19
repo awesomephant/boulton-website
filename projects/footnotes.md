@@ -8,5 +8,11 @@ featured-images:
         width: 56.3
 ---
 
-<img src="/assets/images/Oliver_Boulton_Footnotes_Diorama pp Spread.jpg" width="100%"  alt="">
-<img src="/assets/images/Oliver_Boulton_Footnotes_Diorama pp Spread2.jpg" width="100%" alt="">
+{% sticky %}
+
+ Footnotes. Text, Published by Diorama Revue No.2—Geometric City, 2019. 
+
+{% endsticky %}
+
+{% image src="Oliver_Boulton_Footnotes_Diorama pp Spread.jpg", width="100%",  alt="" %}
+{% image src="Oliver_Boulton_Footnotes_Diorama pp Spread2.jpg", width="100%", alt="" %}

@@ -8,9 +8,15 @@ featured-images:
         width: 100
 ---
 
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_3.jpg" alt="" width="70%"  data-align="left" >
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_4.jpg" alt="" width="80%"  data-align="right" >
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_5.jpg" alt="" width="80%"  data-align="left" >
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_8.jpg" alt="" width="80%"  data-align="right" >
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_9.jpg" alt="" width="80%"  data-align="left" >
-<img src="/assets/images/OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_6.jpg" alt="" width="100%" data-align="left" >
+{% sticky %}
+
+ Guttural Flex [echo]. Sculptures, Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, (Pictures by Franziska Schulz), 2018. 
+ 
+{% endsticky %}
+
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_3.jpg", alt="", width="70%"  ,align="left" %}
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_4.jpg", alt="", width="80%"  ,align="right" %}
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_5.jpg", alt="", width="80%"  ,align="left" %}
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_8.jpg", alt="", width="80%"  ,align="right" %}
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_9.jpg", alt="", width="80%"  ,align="left" %}
+{% image src="OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_6.jpg", alt="", width="100%" ,align="left" %}

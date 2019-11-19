@@ -12,15 +12,26 @@ featured-images:
         width: 82
 ---
 
+{% sticky %}
+
+Eigengrau  
+Jonito Aerts Arguelles
+
+Published by Werkplaats Typografie, 2017  
+Edited and Designed by Oliver Boulton
+
+Edition of 400, Softback, 273 pages  
+Offset, 270 × 215mm
+
+{% endsticky %}
 
 
-  
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_2.png"  alt="" width="32.5%" data-align="right">
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_22.png" alt="" width="65%"   data-align="left"> 
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_12.png" alt="" width="65%"   data-align="right">
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_24.png" alt="" width="65%"   data-align="left">
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_1.png"  alt="" width="65%"   data-align="right">
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_18.png" alt="" width="65%"   data-align="left">  
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_11.png" alt="" width="65%"   data-align="right">
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_13.png" alt="" width="65%"   data-align="left">  
-<img src="/assets/images/OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_5.png"  alt="" width="65%"   data-align="right">
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_2.png",  alt="", width="32.5%",   align="right" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_22.png", alt="", width="65%"  ,   align="left" %} 
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_12.png", alt="", width="65%"  ,   align="right" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_24.png", alt="", width="65%"  ,   align="left" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_1.png",  alt="", width="65%"  ,   align="right" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_18.png", alt="", width="65%"  ,   align="left" %}  
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_11.png", alt="", width="65%"  ,   align="right" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_13.png", alt="", width="65%"  ,   align="left" %}  
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_5.png",  alt="", width="65%"  ,   align="right" %}

@@ -4,14 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --quiet",
-    "images": "gulp images"
+    "start": "npx @11ty/eleventy --serve --quiet"
   },
   "author": "Max Kohler",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "gulp-srcset": "^2.3.1",
-    "gulp": "*"
+    "gulp": "*", 
+    "gulp-using": "*",
+    "gulp-changed": "*",
+    "imagemin-mozjpeg": "*",
+    "imagemin-pngquant": "*",
+    "imagemin-optipng": "*"
   }
 }

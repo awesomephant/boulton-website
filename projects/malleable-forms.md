@@ -8,5 +8,5 @@ featured-images:
         width: 56.3
 ---
 
-<img src="/assets/images/OLIVER_BOULTON_NONCE_WORDS_2.jpg"    data-align="left" width="75%" alt="">
-<img src="/assets/images/Oliver_Boulton__malleable-forms.png" data-align="left" width="75%" alt="">
+{% image src="OLIVER_BOULTON_NONCE_WORDS_2.jpg"    ,align="left", width="75%", alt="" %}
+{% image src="Oliver_Boulton__malleable-forms.png" ,align="left", width="75%", alt="" %}

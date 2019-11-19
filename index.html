@@ -9,25 +9,39 @@ bodyClass: home
 </header>
 
 <ul class="posts">
-
 	{% for post in collections.project %}
 
+	{% if post.data.title == "Letterlike"%}
+	<li class='post'>
+		<span class='post-title button'>
+			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+		</span>
+		<div class="post-list-image randomImage"><img src="/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_2.jpg" alt=""></div>
+	</li>
+	{% else %}
 	<li class='post'>
 		{% if post.data.file %}
-		<a class='post-title button' href='{{post.data.file}}' id='toggle-content'><h2>{{post.data.title}}. {{post.data.subtitle}}</h2></a>
+		<a class='post-title button' href='{{post.data.file}}'>
+			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+		</a>
 		{% else %}
-		<a class='post-title button' href='{{post.url}}' id='toggle-content'><h2>{{post.data.title}}. {{post.data.subtitle}}</h2></a>
+		<a class='post-title button' href='{{post.url}}'>
+			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+		</a>
 		{% endif %}
 		<div class="post-images">
 			{% for image in post.data.featured-images %}
 			{% if post.data.file %}
-			<a href="{{post.data.file}}"><img width="{{image.width}}%" class="post-list-image" src="/assets/images/{{image.url}}" alt="" /></a>
+			<a class="post-list-image" style="max-width: {{image.width}}%" href="{{post.data.file}}"><img
+					src="/assets/images/{{image.url}}" alt="" /></a>
 			{% else %}
-			<a href="{{post.url}}"><img width="{{image.width}}%" class="post-list-image" src="/assets/images/{{image.url}}" alt="" /></a>
+			<a class="post-list-image" style="max-width: {{image.width}}%" href="{{post.url}}"><img
+					src="/assets/images/{{image.url}}" alt="" /></a>
 			{% endif %}
 			{% endfor %}
 		</div>
 	</li>
+	{% endif %}
 	{% endfor %}
 </ul>
 

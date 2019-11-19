@@ -37,8 +37,13 @@ body {
   font-family: "LudwigPro-Normal";
 }
 
-body.home {animation: color 8s alternate infinite;}
-body.project {animation: color 3s reverse;}
+body.home {
+  animation: color 8s alternate infinite;
+}
+
+body.project {
+  animation: color 3s reverse;
+}
 
 
 /* unvisited link */
@@ -124,17 +129,6 @@ a.external:active {
   color: #d7d5d6
 }
 
-#panel {
-  padding: 0 0 0 0px;
-  display: none;
-  font-style: normal;
-  font-size: 15.3px;
-  background-color: #fff;
-  text-align: justify;
-  text-justify: inter-word;
-
-}
-
 .post {
   list-style: none;
 }
@@ -153,6 +147,7 @@ a.external:active {
   display: block;
   top: var(--margin);
   position: sticky;
+  max-width: 80vw;
 }
 
 .post-title h1,
@@ -161,11 +156,29 @@ a.external:active {
   display: inline-block;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
 .post-list-image {
-  max-width: 100%;
+  width: auto;
   display: block;
   margin-bottom: var(--margin);
+  max-height: 90vh;
+  cursor: pointer;
 }
+
+.post-list-image img {
+  max-height: 90vh;
+  display: block;
+  max-width: 100%;
+}
+
 
 .site-header {
   display: flex;
@@ -180,17 +193,27 @@ a.external:active {
   font-size: 15.3px;
   letter-spacing: 0.3px;
   word-spacing: 0.2px;
+  max-width: 90vw;
 }
 
-.single-post--header {
-  color: var(--cream);
-  padding-top: var(--margin);
+.site-header .randomLink {
+  position: fixed;
+  right: var(--margin);
+  top: var(--margin)
 }
 
 .single-post--content {
   display: flex;
   flex-flow: column;
   margin-bottom: 4rem;
+}
+
+.single-post--content p {
+  word-spacing: 0.2px;
+  letter-spacing: 0.3px;
+  color: var(--cream);
+  font-size: 15.3px;
+  margin-bottom: 1.2em;
 }
 
 .single-post--content [data-align='left'] {
@@ -206,7 +229,31 @@ a.external:active {
 }
 
 .single-post--content img {
+  max-width: 100%;
   margin-bottom: var(--margin);
+}
+
+@media (max-width: 40rem) {
+  .single-post--content picture, .single-post--content img {
+    width: 100% !important;
+  }
+  .post-list-image {
+    max-width: 100% !important;
+    max-height: none;
+  }
+}
+
+.single-post--content .sticky {
+  position: sticky;
+  top: var(--margin);
+  left: var(--margin);
+  padding-left: var(--margin);
+  padding-top: var(--margin);
+  padding-bottom: var(--margin);
+}
+
+.sticky p {
+  max-width: none;
 }
 
 .footer-nav {
@@ -220,4 +267,5 @@ a.external:active {
   color: black;
   text-shadow: 0 0 20.5px 0 var(--pink);
   font-size: 20px;
+  color: var(--purple);
 }

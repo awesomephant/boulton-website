@@ -10,16 +10,31 @@ featured-images:
         width: 40
 ---
 
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_1.png" width="35%"         data-align="right" hspace="150">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_3.png" alt="" width="70%"  data-align="left" hspace="0">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_4.png" alt="" width="70%"  data-align="right" hspace="150">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_9.png" alt="" width="70%"  data-align="left" hspace="0">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_8.png" alt=""  width="70%" data-align="right" hspace="150">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_14.png" alt="" width="70%" data-align="left" hspace="0">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_7a.png" alt=""  width="70%"data-align="right" hspace="150">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_15.png" alt="" width="70%" data-align="left" hspace="0">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_7.png" alt=""  width="70%" data-align="right" hspace="150">
-<img src="/assets/images/OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_2.png" alt="" width="35%"  data-align="left" hspace="0">
+{% sticky %}
+
+Octopus of Offshoots  
+Werkplaats Typografie Reader  
+
+Published by Werkplaats Typgrafie and ArtEZ Press, 2019  
+Graphic Design by Adriaan Van Leuven and Oliver Boulton  
+Edited by Adriaan Van Leuvan, Maxine Kopsa and Oliver Boulton  
+
+Edition of 400, Softback, 238 pages  
+Offset, 235 × 120mm  
+ISBN: 978-9-49100-30-73
+
+{% endsticky %}
+
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_1.png" , alt="", width="35%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_3.png" , alt="", width="70%", align="left"  %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_4.png" , alt="", width="70%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_9.png" , alt="", width="70%", align="left"  %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_8.png" , alt="", width="70%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_14.png", alt="", width="70%", align="left"  %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_7a.png", alt="", width="70%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_15.png", alt="", width="70%", align="left"  %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_7.png" , alt="", width="70%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_2.png" , alt="", width="35%", align="left"  %}
 
 Speelplaats is a parallel program held within Werkplaats Typografie, defined as ‘a kind of school within a school’ run by and for the participants, where everyone invited is asked to contribute according to the annual topic. Considered as a testing ground for introducing and exchanging ideas with uncertain outcomes, sporadic open-ended sessions are proposed, organised and realised by individuals and ad-hoc groups.
 
