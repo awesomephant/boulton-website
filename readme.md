@@ -1,10 +1,3 @@
----
----
-
-# Readme
-
-Hey Oliver! I decided to use a slightly more involved build process to work on your website. This is to make it easier for me (and you) to edit the site and add content while keeping everything consistent. However, it requires some setup which is detailed below.
-
 ## Getting started
 
 The first time you run this project, you need to do the following steps in the order they are listed. 
