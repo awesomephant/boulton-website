@@ -2,11 +2,12 @@ function gri(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var hidden, visibilityChange;
+var hidden, visibilityChange, container;
 hidden = false;
 
 function init() {
     const randomLinks = document.querySelectorAll('.randomLink')
+    container = document.querySelector('.overlay')
     for (let i = 0; i < randomLinks.length; i++) {
         let link = randomLinks[i];
         console.log(link)
@@ -34,18 +35,23 @@ function init() {
     }
 
     let randomImage = document.querySelector('.randomImage')
-    randomImage.addEventListener('click', loadRandomImage)
+    let randomImageTitle = document.querySelector('.randomImageTitle')
+    if (randomImage){
+        randomImage.addEventListener('click', loadRandomImage)
+        randomImageTitle.addEventListener('click', loadRandomImage)
+    }
 
 }
 
 var overlayCounter = 0;
+
 function addOverlay(){
     if (overlayCounter < 15){
         let url = `/assets/overlays/layer_Glyph_${gri(1,12)}.png`
         let img = document.createElement('img')
         img.setAttribute('src', url)
-        img.setAttribute('style', `position: absolute; left: ${gri(-5, 80)}vw; top: ${gri(-5,80)}vh; width: 40vw; height: auto`)
-        const container = document.querySelector('.overlay');
+        let rotations = [0, 90, 180,270]
+        img.setAttribute('style', `position: absolute; left: ${gri(-5, 80)}vw; top: ${gri(-5,80)}vh; width: 40vw; height: auto; transform-origin: center; transform: rotate(${rotations[0, gri(rotations.length)]}deg)`)
         container.appendChild(img)
         overlayCounter++
     }
@@ -61,12 +67,33 @@ var overlayLoop;
 
 function handleVisibilityChange() {
     if (document[hidden]) {
-        overlayLoop = window.setInterval(addOverlay, 500)
+        overlayLoop = window.setInterval(addOverlay, 10000)
+        container.classList.add('active')
     } else {
         window.clearInterval(overlayLoop)
-    }
+    }   
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-    init()
+function clearOverlay(){
+    container.classList.remove('active')
+    window.setTimeout(function(){
+        container.innerHTML = '';
+        overlayCounter = 0;
+    }, 1000)
+}
+
+window.addEventListener('DOMContentLoaded', function () {init()})
+window.addEventListener('scroll', function () {
+    clearOverlay()
+})
+window.addEventListener('mousemove', function () {
+    clearOverlay()
+})
+
+window.addEventListener('load', function(){
+    let firstImage = document.querySelector('.single-post--content picture');
+    let copy = document.querySelector('.sticky');
+    if (firstImage && firstImage.getAttribute('data-align') === 'right'){
+        copy.style.position = "fixed";
+    }
 })

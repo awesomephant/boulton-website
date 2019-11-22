@@ -3,7 +3,7 @@ tags: project
 layout: project
 title: Guttural Flex
 subtitle: Sculptures,The BOX, Werkplaats Typografie, Netherlands, 2018.
-image-width: 56.3%
+date: 1013-01-01
 featured-images:
     -   url: OLIVER_BOULTON_GUTTURAL_FLEX_10.png
         width: 56.3

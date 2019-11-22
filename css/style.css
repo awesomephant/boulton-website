@@ -11,7 +11,8 @@
   --cream: #d7d5d6;
   --lightgray: #ebeaea;
   --brown: #392e32;
-  --margin: 15px;
+  --margin: 30px;
+  --margin-small: 13.5px;
 
 }
 
@@ -33,7 +34,6 @@
 
 body {
   background-color: var(--brown);
-  padding: var(--margin);
   font-family: "LudwigPro-Normal";
 }
 
@@ -72,19 +72,6 @@ a:hover {
 a:active {
   color: purple;
   transition: .2s ease-in-out;
-}
-
-p {
-  text-align: left;
-  font-weight: normal;
-  text-align: left;
-  hyphens: none;
-  text-justify: inter-word;
-  font-size: 15.3px;
-  font-family: "LudwigPro-Normal";
-  color: var(--lightgray);
-  max-width: 30em;
-  margin-bottom: .8em;
 }
 
 a.external:link {
@@ -143,8 +130,9 @@ a.external:active {
   word-spacing: 0.2px;
   transition: .2s ease-in-out;
   padding-left: var(--margin);
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-small);
   display: block;
+  transform: translateY(-6px);
   top: var(--margin);
   position: sticky;
   max-width: 80vw;
@@ -163,18 +151,29 @@ a.external:active {
   right: 0;
   bottom: 0;
   pointer-events: none;
+  opacity: 0;
+  transition: 600ms;
+}
+.overlay.active {
+  opacity: 1;
+}
+
+.post-images {
+  padding-left:  var(--margin-small);
+  padding-right: var(--margin-small);
+}
+
+[data-book="true"] .post-images {
+  margin-left: -.7vw;
 }
 
 .post-list-image {
-  width: auto;
   display: block;
   margin-bottom: var(--margin);
-  max-height: 90vh;
   cursor: pointer;
 }
 
 .post-list-image img {
-  max-height: 90vh;
   display: block;
   max-width: 100%;
 }
@@ -183,8 +182,10 @@ a.external:active {
 .site-header {
   display: flex;
   justify-content: space-between;
-  padding: var(--margin);
+  padding-left: var(--margin);
+  padding-top: var(--margin);
   padding-bottom: 9rem;
+
 }
 
 .site-header a {
@@ -199,16 +200,36 @@ a.external:active {
 .site-header .randomLink {
   position: fixed;
   right: var(--margin);
-  top: var(--margin)
+  top: var(--margin);
+  transform: translateY(-6px);
+  font-size: 20px;
 }
 
 .single-post--content {
   display: flex;
   flex-flow: column;
   margin-bottom: 4rem;
+  padding-left: var(--margin-small);
+  padding-top: var(--margin)
 }
 
+@media (min-width: 60rem) {
+  .single-post--content {
+    padding-right: 150px;
+  }
+}
+
+
 .single-post--content p {
+  text-align: left;
+  font-weight: normal;
+  text-align: left;
+  hyphens: none;
+  text-justify: inter-word;
+  font-size: 15.3px;
+  font-family: "LudwigPro-Normal";
+  width: 50%;
+  margin-bottom: .8em;
   word-spacing: 0.2px;
   letter-spacing: 0.3px;
   color: var(--cream);
@@ -234,9 +255,12 @@ a.external:active {
 }
 
 @media (max-width: 40rem) {
-  .single-post--content picture, .single-post--content img {
+
+  .single-post--content picture,
+  .single-post--content img {
     width: 100% !important;
   }
+
   .post-list-image {
     max-width: 100% !important;
     max-height: none;
@@ -244,16 +268,22 @@ a.external:active {
 }
 
 .single-post--content .sticky {
-  position: sticky;
   top: var(--margin);
-  left: var(--margin);
+  transform: translateY(-6px);
+  margin-left: calc(var(--margin-small) * -1);
   padding-left: var(--margin);
-  padding-top: var(--margin);
-  padding-bottom: var(--margin);
+  width: 100%;
+}
+
+@media (min-width: 40rem) {
+  .single-post--content .sticky {
+    position: sticky;
+  }
 }
 
 .sticky p {
   max-width: none;
+  width: 100%;
 }
 
 .footer-nav {

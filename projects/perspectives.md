@@ -3,6 +3,8 @@ tags: project
 layout: project
 title: Perspectives, Paulina Korobkiewicz
 subtitle: Book, Published by Camberwell Press, 2017.
+date: 1004-01-01
+isBook: true
 featured-images:
     -   url: OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_1a.png
         width: 60

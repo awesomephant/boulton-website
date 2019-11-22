@@ -2,6 +2,7 @@
 tags: project
 layout: project
 title: Footnotes.
+date: 1006-01-01
 subtitle: Text, Published by Diorama No.2 — Geometric City, 2019.
 featured-images: 
     -   url: Oliver_Boulton_Footnotes_Diorama pp.jpg

@@ -2,6 +2,8 @@
 tags: project
 layout: project
 title: Top/Top
+date: 1001-01-01
+isBook: true
 subtitle: Liam Magee. Book, Published by Camberwell Press, 2015.
 featured-images:
     -   url: OLIVER_BOULTON_LIAM_MAGEE_CAMBERWELL_PRESS_TOPTOP_8.png

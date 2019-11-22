@@ -3,6 +3,8 @@ tags: project
 layout: project
 title: Eigengrau, Jonito Aerts Arguelles.
 subtitle: Book, Published by Werkplaats Typografie, 2017.
+date: 1008-01-01
+isBook: true
 featured-images: 
     -   url: OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_2.png
         width: 41

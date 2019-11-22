@@ -3,6 +3,8 @@ tags: project
 layout: project
 title: Octopus of Offshoots
 subtitle: Book, Published by ArtEZ Press, 2019.
+date: 1012-01-01
+isBook: true
 featured-images: 
     -   url: OCTOPUS_OF_OFFSHOOTS_HOME_PAGE_2.png
         width: 40

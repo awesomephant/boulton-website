@@ -1,6 +1,7 @@
 ---
 tags: project
 layout: project
+date: 1000-01-01
 title: Malleable Forms
 subtitle: Prints, 2016.
 featured-images:

@@ -2,6 +2,7 @@
 tags: project
 layout: project
 title: Glyph(s)
+date: 1003-01-01
 subtitle: Sculptures, WT in LA, Hoffmitz Milken Center for Typography, Los Angeles, 2017.
 featured-images: 
     -   url: OLIVER_BOULTON_GLYPHS_HMCT_WT_1.jpg

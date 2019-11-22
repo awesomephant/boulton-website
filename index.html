@@ -9,17 +9,17 @@ bodyClass: home
 </header>
 
 <ul class="posts">
-	{% for post in collections.project %}
-
+	{% for post in collections.project | reverse %}
 	{% if post.data.title == "Letterlike"%}
 	<li class='post'>
-		<span class='post-title button'>
+		<a href='#1' class='post-title randomImageTitle button'>
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
-		</span>
-		<div class="post-list-image randomImage"><img src="/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_2.jpg" alt=""></div>
+		</a>
+		{% set first = post.data["featured-images"] | first%}
+		<div class="post-images randomImage"><img style="max-width: {{first.width}}%" src="/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_2.jpg" alt=""></div>
 	</li>
 	{% else %}
-	<li class='post'>
+	<li class='post' data-book={{post.data.isBook}}>
 		{% if post.data.file %}
 		<a class='post-title button' href='{{post.data.file}}'>
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
@@ -30,7 +30,7 @@ bodyClass: home
 		</a>
 		{% endif %}
 		<div class="post-images">
-			{% for image in post.data.featured-images %}
+			{% for image in post.data["featured-images"] %}
 			{% if post.data.file %}
 			<a class="post-list-image" style="max-width: {{image.width}}%" href="{{post.data.file}}"><img
 					src="/assets/images/{{image.url}}" alt="" /></a>
