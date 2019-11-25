@@ -10,7 +10,7 @@ bodyClass: home
 
 <ul class="posts">
 	{% for post in collections.project | reverse %}
-	{% if post.data.title == "Letterlike"%}
+	{% if post.data.title == "Letter-like"%}
 	<li class='post'>
 		<a href='#1' class='post-title randomImageTitle button'>
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
@@ -20,12 +20,13 @@ bodyClass: home
 	</li>
 	{% else %}
 	<li class='post' data-book={{post.data.isBook}}>
+		<div class="anchor" id='{{post.data.title | urlencode }}'></div>
 		{% if post.data.file %}
 		<a class='post-title button' href='{{post.data.file}}'>
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
 		</a>
 		{% else %}
-		<a class='post-title button' href='{{post.url}}'>
+		<a class='post-title button' {% if post.data.permalink != false %}href='{{post.url}}'{% endif %}>
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
 		</a>
 		{% endif %}
@@ -35,7 +36,7 @@ bodyClass: home
 			<a class="post-list-image" style="max-width: {{image.width}}%" href="{{post.data.file}}"><img
 					src="/assets/images/{{image.url}}" alt="" /></a>
 			{% else %}
-			<a class="post-list-image" style="max-width: {{image.width}}%" href="{{post.url}}"><img
+			<a class="post-list-image" style="max-width: {{image.width}}%" {% if post.data.permalink != false %}href="{{post.url}}"{% endif %}><img
 					src="/assets/images/{{image.url}}" alt="" /></a>
 			{% endif %}
 			{% endfor %}
