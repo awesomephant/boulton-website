@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy("favicons");
 
     eleventyConfig.addShortcode("image", function (image) {
         let components = image.src.split('.')
