@@ -150,6 +150,7 @@ a[]:active {
   padding-left: var(--margin);
   padding-top: var(--margin);
   padding-bottom: 9rem;
+  transform: translateY(-6px);
 }
 
 .site-header a {
