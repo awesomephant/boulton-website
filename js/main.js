@@ -94,6 +94,6 @@ window.addEventListener('load', function(){
     let firstImage = document.querySelector('.single-post--content picture');
     let copy = document.querySelector('.sticky');
     if (firstImage && firstImage.getAttribute('data-align') === 'right'){
-        copy.style.position = "fixed";
+        copy.classList.add("fixed");
     }
 })

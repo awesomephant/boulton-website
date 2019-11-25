@@ -244,6 +244,12 @@ a[]:active {
   margin-left: calc(var(--margin-small) * -1);
   padding-left: var(--margin);
   width: 100%;
+  margin-bottom: 1em;
+}
+
+.single-post--content .sticky.fixed {
+  position: fixed;
+  left: var(--margin-small)
 }
 
 @media (min-width: 40rem) {
@@ -277,6 +283,6 @@ a[]:active {
   font-size: 15.3px;
   padding-left: var(--margin);
   padding-right: var(--margin);
-  color: var(--lightgray);
+  color: var(--cream);
   padding-bottom: var(--margin);
 }
