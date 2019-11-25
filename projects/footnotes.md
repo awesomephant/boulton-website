@@ -1,12 +1,13 @@
 ---
 tags: project
 layout: project
-title: Footnotes.
+title: Footnotes
 date: 1006-01-01
-subtitle: Text, Published by Diorama No.2 — Geometric City, 2019.
+subtitle: Text, Published by Diorama No.2—Geometric City, France, 2019.
+file: "/assets/pdf/Oliver_Boulton_Footnotes.pdf"
 featured-images: 
-    -   url: Oliver_Boulton_Footnotes_Diorama pp.jpg
-        width: 56.3
+    -   url: Oliver_Boulton_Footnotes_1.jpg
+        width: 43
 ---
 
 {% sticky %}
@@ -17,3 +18,15 @@ featured-images:
 
 {% image src="Oliver_Boulton_Footnotes_Diorama pp Spread.jpg", width="100%",  alt="" %}
 {% image src="Oliver_Boulton_Footnotes_Diorama pp Spread2.jpg", width="100%", alt="" %}
+
+---
+tags: project
+layout: project
+title: Footnotes
+date: 1006-01-01
+subtitle: Text, Published by Diorama No.2—Geometric City, 2019.
+file: "/assets/pdf/Oliver_Boulton_Footnotes.pdf"
+featured-images:
+    -   url: Oliver_Boulton_Footnotes_1.jpg
+        width: 43
+---

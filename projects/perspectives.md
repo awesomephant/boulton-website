@@ -7,7 +7,7 @@ date: 1004-01-01
 isBook: true
 featured-images:
     -   url: OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_1a.png
-        width: 60
+        width: 96.8
 ---
 
 {% sticky %}
@@ -26,10 +26,10 @@ ISBN: 978-1-908971-53-1
 
 {% endsticky %}
 
-{% image align="right", src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_1a.png", width="40.2%", alt="" %}
-{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_2.png" , width="80%"  , alt="" %}
-{% image align="right", src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_3.png" , width="80%"  , alt="" %}
-{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_5.png" , width="78.2%", alt="" %}
-{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_6.png" , width="40.9%", alt="" %}
+{% image align="right", src="OLIVER_BOULTON_PAULINA-KOROBKIEWCZ_PERSPECTIVES_7.png", width="86.3%", alt="" %}
+{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_2.png" , width="88%"  , alt="" %}
+{% image align="right", src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_3.png" , width="88%"  , alt="" %}
+{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_5.png" , width="86%", alt="" %}
+{% image align="left" , src="OLIVER_BOULTON_PAULINA KOROBKIEWCZ_PERSPECTIVES_6.png" , width="45.9%", alt="" %}
 
-Corners of images spill onto following pages, echoing the meandering of city streets. The viewer is guided on a tour of housing blocks, steered along a series of steps, elevations, platforms, and balconies. Familiar landscapes are intensified through repetition and sequencing, injecting the pages with movement. — Maggie Kuzan
+Corners of images spill onto following pages, echoing the meandering of city streets. The viewer is guided on a tour of housing blocks, steered along a series of steps, elevations, platforms, and balconies. Familiar landscapes are intensified through repetition and sequencing, injecting the pages with movement. —Maggie Kuzan

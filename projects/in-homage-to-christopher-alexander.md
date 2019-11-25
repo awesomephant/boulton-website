@@ -15,4 +15,4 @@ featured-images:
 
 {% endsticky %}
 
-{% image src="OLIVER_BOULTON_HOW_A_MAP_IN_YOUR_MIND_WORKS_1.jpg", width="80%", alt="", align="left" %}
+{% image src="OLIVER_BOULTON_HOW_A_MAP_IN_YOUR_MIND_WORKS_1.jpg", width="60%", alt="", align="left" %}

@@ -1,19 +1,13 @@
 ---
 tags: project
 layout: project
-title: A Glib Remark
+title: A Glib Remark, A Fragment or Unfinished Phrase
 date: 1009-01-10
-subtitle: A Fragment or Unfinished Phrase. Sculptures, 2018.
+subtitle: Sculptures, 2018.
 featured-images:
     -   url: OLIVER_BOULTON_A_GLIB_REMARK_2.png
         width: 100
 ---
-
-<style>
-.single-post--content img {
-    margin-bottom: -4px;
-}
-</style>
 
 {% sticky %}
 
