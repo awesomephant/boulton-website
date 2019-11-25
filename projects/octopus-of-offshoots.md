@@ -27,7 +27,7 @@ ISBN: 978-9-49100-30-73
 
 {% endsticky %}
 
-{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_1a.png" , alt="", width="70%", align="right" %}
+{% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_1a.png" , alt="", width="70%",align="right" %}
 {% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_3.png" , alt="", width="70%", align="left"  %}
 {% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_4.png" , alt="", width="70%", align="right" %}
 {% image src="OLIVER_BOULTON_OCTOPUS_OF_OFFSHOOTS_9.png" , alt="", width="70%", align="left"  %}

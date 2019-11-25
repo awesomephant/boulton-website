@@ -47,7 +47,7 @@ body.project {
 
 
 /* unvisited link */
-a:link {
+a {
   color: purple;
   text-shadow: 0 0 12.5px purple;
   padding: 0 0 0.2 0;
@@ -61,59 +61,16 @@ a:visited {
   transition: .2s ease-in-out;
 }
 
-/* mouse over link */
-a:hover {
+a[href]:hover {
   color: #d7d5d6;
   text-shadow: 0 0 12.5px #d7d5d6;
   transition: .2s ease-in-out;
 }
 
 /* selected link */
-a:active {
+a[]:active {
   color: purple;
   transition: .2s ease-in-out;
-}
-
-a.external:link {
-  padding: 7 0 0 8px;
-  color: #d7d5d6;
-  font-size: 15.3px;
-  font-weight: normal;
-  text-shadow: none;
-}
-
-a.external:visited {
-  padding: 7 0 0 8px;
-  color: #d7d5d6;
-  font-size: 15.3px;
-  font-weight: normal;
-  text-shadow: none;
-}
-
-a.external:hover {
-  padding: 7 0 0 8px;
-  padding: 7 0 0 8px;
-  text-shadow: none;
-  color: #d7d5d6;
-}
-
-a.external:active {
-  padding: 7 0 0 8px;
-  color: #d7d5d6;
-}
-
-.site-footer {
-  position: fixed;
-  cursor: default;
-  font-weight: normal;
-  text-align: left;
-  letter-spacing: 0.3px;
-  word-spacing: 0.2px;
-  font-family: "LudwigPro-Normal";
-  margin: 0 0 0 0;
-  padding: 11 0 0 17px;
-  font-size: 15.3px;
-  color: #d7d5d6
 }
 
 .post {
@@ -154,23 +111,32 @@ a.external:active {
   opacity: 0;
   transition: 600ms;
 }
+
 .overlay.active {
   opacity: 1;
 }
 
 .post-images {
-  padding-left:  var(--margin-small);
+  padding-left: var(--margin-small);
   padding-right: var(--margin-small);
 }
 
 [data-book="true"] .post-images {
   margin-left: -.7vw;
+  margin-bottom: -.7vw;
+  margin-top: -.7vw;
 }
 
+[data-book="true"] .post-list-image {
+  margin-bottom: -.5vw;
+}
 .post-list-image {
   display: block;
-  margin-bottom: var(--margin-small);
+  margin-bottom: calc(var(--margin-small) + 1px) /* margin-small with optical correction */;
   cursor: pointer;
+}
+.post-list-image:last-of-type {
+  margin-bottom: calc(var(--margin) - 2px); /*margin with optical correction*/
 }
 
 .post-list-image img {
@@ -178,19 +144,16 @@ a.external:active {
   max-width: 100%;
 }
 
-
 .site-header {
   display: flex;
   justify-content: space-between;
   padding-left: var(--margin);
   padding-top: var(--margin);
   padding-bottom: 9rem;
-
 }
 
 .site-header a {
   text-decoration: none;
-  color: var(--purple);
   font-size: 15.3px;
   letter-spacing: 0.3px;
   word-spacing: 0.2px;
@@ -210,6 +173,7 @@ a.external:active {
   flex-flow: column;
   margin-bottom: 4rem;
   padding-left: var(--margin-small);
+  padding-right: var(--margin-small);
   padding-top: var(--margin)
 }
 
@@ -223,18 +187,25 @@ a.external:active {
 .single-post--content p {
   text-align: left;
   font-weight: normal;
-  text-align: left;
   hyphens: none;
   text-justify: inter-word;
   font-size: 15.3px;
   font-family: "LudwigPro-Normal";
-  width: 50%;
   margin-bottom: .8em;
   word-spacing: 0.2px;
   letter-spacing: 0.3px;
   color: var(--cream);
   font-size: 15.3px;
   margin-bottom: 1.2em;
+  width: 100%;
+  margin-left: calc(var(--margin-small) * -1);
+  padding-left: var(--margin);
+}
+
+@media (min-width: 50rem) {
+  .single-post--content p {
+    width: 50%;
+  }
 }
 
 .single-post--content [data-align='left'] {
@@ -255,7 +226,6 @@ a.external:active {
 }
 
 @media (max-width: 40rem) {
-
   .single-post--content picture,
   .single-post--content img {
     width: 100% !important;
@@ -269,6 +239,7 @@ a.external:active {
 
 .single-post--content .sticky {
   top: var(--margin);
+  left: 0;
   transform: translateY(-6px);
   margin-left: calc(var(--margin-small) * -1);
   padding-left: var(--margin);
@@ -284,6 +255,8 @@ a.external:active {
 .sticky p {
   max-width: none;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-nav {
@@ -294,8 +267,16 @@ a.external:active {
 
 .footer-nav a {
   text-decoration: none;
-  color: black;
-  text-shadow: 0 0 20.5px 0 var(--pink);
   font-size: 20px;
-  color: var(--purple);
+}
+
+.site-footer {
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  font-size: 15.3px;
+  padding-left: var(--margin);
+  padding-right: var(--margin);
+  color: var(--lightgray);
+  padding-bottom: var(--margin);
 }
