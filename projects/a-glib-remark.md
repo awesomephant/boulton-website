@@ -9,6 +9,12 @@ featured-images:
         width: 100
 ---
 
+<style>
+.single-post--content img {
+    margin-bottom: -4px;
+}
+</style>
+
 {% sticky %}
 
  A Glib Remark, A Fragment or Unfinished Phrase. Sculptures, Steel. 100 × 20 mm, 2018.

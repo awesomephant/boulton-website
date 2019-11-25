@@ -16,7 +16,7 @@ bodyClass: home
 			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
 		</a>
 		{% set first = post.data["featured-images"] | first%}
-		<div class="post-images randomImage"><img style="max-width: {{first.width}}%" src="/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_2.jpg" alt=""></div>
+		<div class="post-images randomImage"><img class='post-list-image' style="max-width: {{first.width}}%" src="/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_2.jpg" alt=""></div>
 	</li>
 	{% else %}
 	<li class='post' data-book={{post.data.isBook}}>

@@ -169,7 +169,7 @@ a.external:active {
 
 .post-list-image {
   display: block;
-  margin-bottom: var(--margin);
+  margin-bottom: var(--margin-small);
   cursor: pointer;
 }
 
