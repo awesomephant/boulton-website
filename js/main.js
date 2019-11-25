@@ -93,7 +93,10 @@ window.addEventListener('mousemove', function () {
 window.addEventListener('load', function(){
     let firstImage = document.querySelector('.single-post--content picture');
     let copy = document.querySelector('.sticky');
-    if (firstImage && firstImage.getAttribute('data-align') === 'right'){
-        copy.classList.add("fixed");
+    let container = document.querySelector('.single-post--content');
+    if (firstImage && firstImage.getAttribute('data-align') != 'right'){
+        if (window.matchMedia('(min-width: 40rem)').matches){
+            container.style.paddingTop = `${copy.offsetHeight + 50}px`;
+        }
     }
 })
