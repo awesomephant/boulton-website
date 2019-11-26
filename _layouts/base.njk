@@ -27,7 +27,8 @@
     
         let projects = [
             {%- for p in collections.project -%}
-                "{{p.url}}",
+                {% if not p.data.file %}
+                {% if p.data.permalink != false %}"{{p.url}}",{% endif %}{% endif %}
             {%- endfor -%}
             ""
         ]
