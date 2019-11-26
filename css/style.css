@@ -1,9 +1,6 @@
-* {
-  font-size: 100%;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-}
+/*===================================================================
+============================== Variables ============================
+=====================================================================*/
 
 :root {
   --purple: purple;
@@ -17,19 +14,25 @@
 
 @font-face {
   font-family: LudwigPro-Normal;
-  Src: url("/assets/fonts/LifeLTStd-Roman.otf");
+  src: url("/assets/fonts/LifeLTStd-Roman.otf") format("opentype");
 }
 
 @keyframes color {
-  0% {
-    background-color: var(--brown);
-  }
-
-  100% {
-    background-color: var(--lightgray);
-  }
+  0% {background-color: var(--brown);}
+  100% {background-color: var(--lightgray);}
 }
 
+/*================================================================
+======================= Global Settings ==========================
+==================================================================*/
+
+* {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--brown);
@@ -44,18 +47,13 @@ body.project {
   animation: color 3s reverse;
 }
 
-
-a {
-  color: purple;
-  text-shadow: 0 0 12.5px purple;
+a, a:visited {
+  color: var(--purple);
+  text-shadow: 0 0 12.5px var(--purple);
   padding: 0 0 0.2 0;
   transition: .2s ease-in-out;
+  text-decoration: none;
 
-}
-
-a:visited {
-  color: purple;
-  transition: .2s ease-in-out;
 }
 
 a[href]:hover {
@@ -64,16 +62,83 @@ a[href]:hover {
   transition: .2s ease-in-out;
 }
 
-.post {
+/*===================================================================
+============================== Header ===============================
+=====================================================================*/
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: var(--margin);
+  padding-top: var(--margin);
+  padding-bottom: 9rem;
+  transform: translateY(-6px);
+}
+
+.site-header a {
+  font-size: 15.3px;
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  max-width: 90vw;
+}
+
+.site-header .randomLink {
+  position: fixed;
+  right: var(--margin);
+  top: var(--margin);
+  transform: translateY(-6px);
+  font-size: 20px;
+}
+
+/*===================================================================
+============================== Footer ===============================
+=====================================================================*/
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--margin-small);
+}
+
+@media (min-width: 40rem) {
+  .footer-nav {
+    padding: var(--margin);
+  }
+}
+
+.footer-nav a {
+  font-size: 20px;
+}
+
+.site-footer {
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  font-size: 15.3px;
+  padding-left: var(--margin-small);
+  padding-right: var(--margin-small);
+  color: var(--cream);
+  padding-bottom: var(--margin);
+}
+
+@media (min-width: 40rem) {
+  .site-footer {
+    padding-left: var(--margin);
+    padding-right: var(--margin);
+  }
+}
+
+/*===================================================================
+============================== Homepage =============================
+=====================================================================*/
+
+.post-list .post {
   list-style: none;
 }
 
 .post-title {
   color: var(--purple);
-  text-decoration: none;
   text-shadow: 15px;
   font-size: 15.3px;
-  font-weight: normal;
   letter-spacing: 0.3px;
   word-spacing: 0.2px;
   transition: .2s ease-in-out;
@@ -92,30 +157,15 @@ a[href]:hover {
   display: inline-block;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  opacity: 0;
-  transition: 600ms;
-}
-
-.overlay.active {
-  opacity: 1;
-}
-
 .post-images {
   padding-left: var(--margin-small);
   padding-right: var(--margin-small);
 }
 
 [data-book="true"] .post-images {
-  margin-left: -.7vw;
-  margin-bottom: -.7vw;
+  margin-bottom: -.7%;
   margin-top: -.7vw;
+  transform: translateX(-.7%);
 }
 
 [data-book="true"] .post-list-image {
@@ -124,15 +174,12 @@ a[href]:hover {
 
 .post-list-image {
   display: block;
-  margin-bottom: calc(var(--margin-small) + 1px)
-    /* margin-small with optical correction */
-  ;
+  margin-bottom: calc(var(--margin-small) + 1px); /* margin-small with optical correction */
   cursor: pointer;
 }
 
 .post-list-image:last-of-type {
-  margin-bottom: calc(var(--margin) - 2px);
-  /*margin with optical correction*/
+  margin-bottom: calc(var(--margin) - 2px); /* margin with optical correction */
 }
 
 .post-list-image img {
@@ -140,30 +187,10 @@ a[href]:hover {
   max-width: 100%;
 }
 
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  padding-left: var(--margin);
-  padding-top: var(--margin);
-  padding-bottom: 9rem;
-  transform: translateY(-6px);
-}
 
-.site-header a {
-  text-decoration: none;
-  font-size: 15.3px;
-  letter-spacing: 0.3px;
-  word-spacing: 0.2px;
-  max-width: 90vw;
-}
-
-.site-header .randomLink {
-  position: fixed;
-  right: var(--margin);
-  top: var(--margin);
-  transform: translateY(-6px);
-  font-size: 20px;
-}
+/*=============================================================
+======================== Single Project =======================
+===============================================================*/
 
 .single-post--content {
   display: flex;
@@ -182,14 +209,12 @@ a[href]:hover {
   }
 }
 
-
 .single-post--content p {
   text-align: left;
   font-weight: normal;
   hyphens: none;
   text-justify: inter-word;
   font-size: 15.3px;
-  font-family: "LudwigPro-Normal";
   margin-bottom: .8em;
   word-spacing: 0.2px;
   letter-spacing: 0.3px;
@@ -226,12 +251,10 @@ a[href]:hover {
 }
 
 @media (max-width: 40rem) {
-
   .single-post--content picture,
   .single-post--content img {
     width: 100% !important;
   }
-
   .post-list-image {
     max-width: 100% !important;
     max-height: none;
@@ -248,7 +271,6 @@ a[href]:hover {
   left: var(--margin-small)
 }
 
-
 @media (min-width: 40rem) {
   .single-post--content .sticky {
     position: fixed;
@@ -263,37 +285,21 @@ a[href]:hover {
   padding: 0;
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--margin-small);
+/*=============================================================
+======================== Overlay Glyphs =======================
+===============================================================*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: 600ms;
 }
 
-@media (min-width: 40rem) {
-  .footer-nav {
-    padding: var(--margin);
-  }
-}
-
-.footer-nav a {
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.site-footer {
-  font-weight: normal;
-  letter-spacing: 0.3px;
-  word-spacing: 0.2px;
-  font-size: 15.3px;
-  padding-left: var(--margin-small);
-  padding-right: var(--margin-small);
-  color: var(--cream);
-  padding-bottom: var(--margin);
-}
-
-@media (min-width: 40rem) {
-  .site-footer {
-    padding-left: var(--margin);
-    padding-right: var(--margin);
-  }
+.overlay.active {
+  opacity: 1;
 }
