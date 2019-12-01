@@ -5,3 +5,4 @@ _site/
 yarn.lock
 *.log
 *.zip
+.DS_Store
