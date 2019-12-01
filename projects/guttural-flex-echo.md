@@ -2,12 +2,18 @@
 tags: project
 layout: project
 title: Guttural Flex [echo]
-date: 1010-01-01
+date: 1011-01-01
 subtitle: Sculptures, As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, 2018.
+favicon: favicon-4
 featured-images: 
     -   url: OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_6.png
         width: 100
 ---
+<style>
+    .single-post--content img {
+        margin-bottom: 8px;
+    }
+</style>
 
 {% sticky %}
 

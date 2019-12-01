@@ -5,6 +5,7 @@ title: Top/Top, Liam Magee
 date: 1001-01-01
 isBook: true
 subtitle: Book, Published by Camberwell Press, 2015.
+favicon: favicon-11
 featured-images:
     -   url: OLIVER_BOULTON_LIAM_MAGEE_CAMBERWELL_PRESS_TOPTOP_8.png
         width: 73
@@ -12,16 +13,16 @@ featured-images:
   
 {% sticky %}
 
-Top/Top  
-Liam Magee
-
-Published by Camberwell Press, 2015  
-Graphic Design by Oliver Boulton  
-Edited by Duncan Wooldridge, James Edgar  
-Oliver Boulton and Sigune Hamann  
-
-Edition of 150, Softback, 36 pages  
-Offset, 270 × 215mm  
+Top/Top<br>
+Liam Magee<br>
+<br>
+Published by Camberwell Press, 2015<br>
+Graphic Design by Oliver Boulton<br>
+Edited by Duncan Wooldridge, James Edgar<br>
+Oliver Boulton and Sigune Hamann<br>
+<br>
+Edition of 150, Softback, 36 pages<br>
+Offset, 270 × 215mm<br>
 ISBN: 978-1-908971-41-8
 
 {% endsticky %}

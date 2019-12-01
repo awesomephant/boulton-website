@@ -3,11 +3,11 @@ tags: project
 layout: project
 date: 1000-01-01
 title: Malleable Forms
-subtitle: Prints, 2016.
+subtitle: Letterpress Print. Edition of 26, 594 × 841mm, 2016.
 permalink: false
 featured-images:
     -   url: Oliver_Boulton__malleable-forms.png
-        width: 56.3
+        width: 60
 ---
 {% sticky %}
 
