@@ -177,7 +177,7 @@ a[href]:hover {
 
 .post-list-image {
   display: block;
-  margin-bottom: calc(var(--margin-small) + 1px); /* margin-small with optical correction */
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
