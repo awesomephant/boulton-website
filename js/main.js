@@ -75,8 +75,6 @@ function handleVisibilityChange() {
     if (document[hidden]) {
         overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
         container.classList.add('active')
-    } else {
-        window.clearInterval(overlayLoop)
     }
 }
 
