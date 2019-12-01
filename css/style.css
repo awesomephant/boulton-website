@@ -46,11 +46,22 @@ body {
   font-family: "LudwigPro-Normal";
 }
 
-body.home {
+body.home:after, body.project:after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: background-color;
+  pointer-events: none;
+  z-index: -100;
+}
+body.home:after {
   animation: color 8s alternate infinite;
 }
-
-body.project {
+body.project:after {
   animation: color 3s reverse;
 }
 
