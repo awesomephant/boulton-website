@@ -90,11 +90,11 @@ a[href]:hover {
   max-width: 90vw;
 }
 
-.site-header .randomLink {
+.randomLink {
   position: fixed;
   right: var(--margin);
   top: var(--margin);
-  transform: translateY(-6px);
+  transform: translateY(-9px); /* Optical Correction */
   font-size: 20px;
 }
 
