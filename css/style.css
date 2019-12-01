@@ -342,11 +342,12 @@ a[href]:hover {
 .overlay img {
   min-height: 100vh;
   width: 100vw;
-  top: 0;
+  top: 50%;
   left: 50%;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   opacity: 0;
+  z-index: 5000;
   animation: fade-in both 500ms;
   animation-delay: 1000ms;
 }
