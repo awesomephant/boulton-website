@@ -2,7 +2,7 @@
 // ====CONFIG====
 //===============
 
-const delayBetweenOverlays = 3; // Seconds
+const delayBetweenOverlays = 10; // Seconds
 const activateOverlayAfter = 5; // Seconds
 
 function gri(min, max) {
