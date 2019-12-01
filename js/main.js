@@ -73,13 +73,18 @@ function loadRandomImage() {
 
 function handleVisibilityChange() {
     if (document[hidden]) {
+        window.clearInterval(overlayLoop)
         overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
         container.classList.add('active')
+        container.classList.add('no-animation')
+    } else {
+        container.classList.remove('no-animation')
     }
 }
 
 function clearOverlay() {
     container.classList.remove('active')
+    container.classList.remove('no-animation')
     window.setTimeout(function () {
         container.innerHTML = '';
         overlayCounter = 1;

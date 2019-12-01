@@ -340,6 +340,11 @@ a[href]:hover {
   z-index: 5000;
 }
 
+overlay.no-animation img{
+  animation: none;
+  opacity: 1;
+}
+
 .overlay img {
   min-height: 100vh;
   width: 100vw;
