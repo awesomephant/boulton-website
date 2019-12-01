@@ -98,18 +98,39 @@ function tick() {
 }
 
 window.addEventListener('DOMContentLoaded', function () { init() })
-window.addEventListener('scroll', function () {
+var ticking = false;
+
+function handleScroll() {
     clearOverlay()
     inactiveTime = 0;
     inactive = false;
     window.clearInterval(overlayLoop)
-})
-window.addEventListener('mousemove', function () {
+}
+function handleMouseMove() {
     clearOverlay()
     inactiveTime = 0;
     inactive = false;
     window.clearInterval(overlayLoop)
-})
+}
+
+window.addEventListener('mousemove', function (e) {
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            handleMouseMove();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+window.addEventListener('scroll', function (e) {
+    if (!ticking) {
+        window.requestAnimationFrame(function () {
+            handleScroll();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
 
 window.addEventListener('load', function () {
     let firstImage = document.querySelector('.single-post--content picture');
