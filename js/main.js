@@ -58,7 +58,7 @@ function addOverlay(){
 }
 
 function loadRandomImage(){
-    let url = `/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_${gri(2,19)}.jpg`
+    let url = `/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_${gri(1,2)}.jpg`
     let el = document.querySelector('.randomImage img')
     el.setAttribute('src', url)   
 }
