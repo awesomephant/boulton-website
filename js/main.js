@@ -91,7 +91,7 @@ function tick() {
     if (inactiveTime > activateOverlayAfter && inactive === false) {
         inactive = true;
         container.classList.add('active')
-        window.setInterval(addOverlay, delayBetweenOverlays * 1000)
+        overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
     }
 }
 
