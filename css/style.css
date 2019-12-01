@@ -177,7 +177,7 @@ a[href]:hover {
 
 .post-list-image {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 13px; /* optically the same as project page */
   cursor: pointer;
 }
 
