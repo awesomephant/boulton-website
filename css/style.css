@@ -323,6 +323,11 @@ a[href]:hover {
 ======================== Overlay Glyphs =======================
 ===============================================================*/
 
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -334,6 +339,17 @@ a[href]:hover {
   transition: 600ms;
 }
 
+.overlay img {
+  min-height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fade-in both 500ms;
+  animation-delay: 1000ms;
+}
 .overlay.active {
   opacity: 1;
 }

@@ -1,8 +1,18 @@
+//===============
+// ====CONFIG====
+//===============
+
+const delayBetweenOverlays = 3; // Seconds
+const activateOverlayAfter = 5; // Seconds
+
 function gri(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+var overlayLoop;
 var hidden, visibilityChange, container;
+var inactiveTime = 0;
+var inactive = false;
 hidden = false;
 
 function init() {
@@ -36,66 +46,77 @@ function init() {
 
     let randomImage = document.querySelector('.randomImage')
     let randomImageTitle = document.querySelector('.randomImageTitle')
-    if (randomImage){
+    if (randomImage) {
         randomImage.addEventListener('click', loadRandomImage)
         randomImageTitle.addEventListener('click', loadRandomImage)
     }
 
+    window.setInterval(tick, 1000)
 }
 
-var overlayCounter = 0;
-
-function addOverlay(){
-    if (overlayCounter < 15){
-        let url = `/assets/overlays/layer_Glyph_${gri(1,12)}.png`
+var overlayCounter = 1;
+function addOverlay() {
+    if (overlayCounter <= 12) {
+        let url = `/assets/overlays/oliver-boulton-website-path-${overlayCounter}.png`
         let img = document.createElement('img')
         img.setAttribute('src', url)
-        let rotations = [0, 90, 180,270]
-        img.setAttribute('style', `position: absolute; left: ${gri(-5, 80)}vw; top: ${gri(-5,80)}vh; width: 40vw; height: auto; transform-origin: center; transform: rotate(${rotations[0, gri(rotations.length)]}deg)`)
         container.appendChild(img)
         overlayCounter++
     }
 }
 
-function loadRandomImage(){
-    let url = `/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_${gri(1,2)}.jpg`
+function loadRandomImage() {
+    let url = `/assets/letter-like/OLIVER_BOULTON_LETTER_LIKE_${gri(1, 2)}.jpg`
     let el = document.querySelector('.randomImage img')
-    el.setAttribute('src', url)   
+    el.setAttribute('src', url)
 }
-
-var overlayLoop;
 
 function handleVisibilityChange() {
     if (document[hidden]) {
-        overlayLoop = window.setInterval(addOverlay, 10000)
+        overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
         container.classList.add('active')
     } else {
         window.clearInterval(overlayLoop)
-    }   
+    }
 }
 
-function clearOverlay(){
+function clearOverlay() {
     container.classList.remove('active')
-    window.setTimeout(function(){
+    window.setTimeout(function () {
         container.innerHTML = '';
-        overlayCounter = 0;
+        overlayCounter = 1;
     }, 1000)
 }
 
-window.addEventListener('DOMContentLoaded', function () {init()})
+function tick() {
+    inactiveTime++;
+    if (inactiveTime > activateOverlayAfter && inactive === false) {
+        inactive = true;
+        container.classList.add('active')
+        window.setInterval(addOverlay, delayBetweenOverlays * 1000)
+    }
+}
+
+window.addEventListener('DOMContentLoaded', function () { init() })
 window.addEventListener('scroll', function () {
     clearOverlay()
+    inactiveTime = 0;
+    inactive = false;
+    window.clearInterval(overlayLoop)
 })
 window.addEventListener('mousemove', function () {
     clearOverlay()
+    inactiveTime = 0;
+    inactive = false;
+    window.clearInterval(overlayLoop)
 })
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     let firstImage = document.querySelector('.single-post--content picture');
     let copy = document.querySelector('.sticky');
     let container = document.querySelector('.single-post--content');
-    if (firstImage && firstImage.getAttribute('data-align') != 'right'){
-        if (window.matchMedia('(min-width: 40rem)').matches){
+    if (firstImage && firstImage.getAttribute('data-align') != 'right') {
+        if (window.matchMedia('(min-width: 40rem)').matches) {
             container.style.paddingTop = `${copy.offsetHeight + 50}px`;
         }
     }
