@@ -266,8 +266,18 @@ a[href]:hover {
   max-width: 100%;
 }
 
+/* Optical corrections follow */
+
+.single-post--content picture:first-of-type {
+  margin-top: -2px
+}
+
 .single-post--content picture:last-of-type {
   margin-bottom: var(--margin)
+}
+
+[data-book=true] .single-post--content picture:first-of-type{
+  margin-top: -.8vw
 }
 
 @media (max-width: 40rem) {
