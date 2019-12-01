@@ -149,6 +149,7 @@ a[href]:hover {
   top: var(--margin);
   position: sticky;
   max-width: 80vw;
+  z-index: 1000;
 }
 
 .post-title h1,
