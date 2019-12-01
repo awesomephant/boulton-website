@@ -28,6 +28,11 @@
     background-color: var(--lightgray);
   }
 }
+@keyframes colorCycle {
+  0% {background-color: var(--brown);}
+  50% {background-color: var(--lightgray);}
+  100% {background-color: var(--brown);}
+}
 
 /*================================================================
 ======================= Global Settings ==========================
@@ -59,10 +64,10 @@ body.home:after, body.project:after {
   z-index: -100;
 }
 body.home:after {
-  animation: color 8s alternate infinite;
+  animation: colorCycle 10s ease-in-out infinite;
 }
 body.project:after {
-  animation: color 3s reverse;
+  animation: color 5s reverse;
 }
 
 a,
