@@ -337,6 +337,7 @@ a[href]:hover {
   pointer-events: none;
   opacity: 0;
   transition: 600ms;
+  z-index: 5000;
 }
 
 .overlay img {
@@ -347,7 +348,6 @@ a[href]:hover {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   opacity: 0;
-  z-index: 5000;
   animation: fade-in both 1000ms;
   animation-delay: 1000ms;
 }
