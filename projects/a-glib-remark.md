@@ -12,7 +12,7 @@ featured-images:
 
 <style>
     .single-post--content img {
-        margin-bottom: -12px;
+        margin-bottom: -14px;
     }
 </style>
 

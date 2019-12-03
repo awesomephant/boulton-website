@@ -64,7 +64,7 @@ body.home:after, body.project:after {
   z-index: -100;
 }
 body.home:after {
-  animation: colorCycle 10s ease-in-out infinite;
+  animation: colorCycle 8s ease-in-out infinite;
 }
 body.project:after {
   animation: color 5s reverse;

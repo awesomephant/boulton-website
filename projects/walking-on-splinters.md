@@ -7,7 +7,7 @@ favicon: favicon-9
 date: 1005-01-01
 isBook: true
 featured-images: 
-    -   url: OLIVER_BOULTON_WALKING_ON_SPLINTERS_HOMEPAGE_10.png
+    -   url: OLIVER_BOULTON_WALKING_ON_SPLINTERS_HOMEPAGE_1.png
         width: 72
     -   url: OLIVER_BOULTON_WALKING_ON_SPLINTERS_HOMEPAGE_2.png
         width: 72
@@ -32,7 +32,7 @@ Digital Print, 210 × 148mm
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_a.png", alt="", width="79%",   align="left" %}
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_2.png", alt="", width="79%",   align="right" %}
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_b.png", alt="", width="79%",   align="left" %}
-{% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_HOMEPAGE_1.png", alt="", width="79%",   align="right" %}
+{% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_c.png", alt="", width="79%",   align="right" %}
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_3a.png", alt="", width="79%",   align="left" %}
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_4.png",  alt="", width="79%",   align="right" %}
 {% image src="OLIVER_BOULTON_WALKING_ON_SPLINTERS_5.png", alt="", width="79%",    align="left" %}  

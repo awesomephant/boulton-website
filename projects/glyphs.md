@@ -9,11 +9,7 @@ featured-images:
     -   url: OLIVER_BOULTON_GLYPHS_HMCT_WT_1.jpg
         width: 100
 ---
-<style>
-    .single-post--content img {
-        margin-bottom: 8px;
-    }
-</style>
+
 
 {% sticky %}
 

@@ -3,7 +3,7 @@
 //===============
 
 const delayBetweenOverlays = 10; // Seconds
-const activateOverlayAfter = 5; // Seconds
+const activateOverlayAfter = 8; // Seconds
 
 function gri(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
