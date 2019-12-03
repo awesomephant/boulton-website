@@ -28,10 +28,19 @@
     background-color: var(--lightgray);
   }
 }
+
 @keyframes colorCycle {
-  0% {background-color: var(--brown);}
-  50% {background-color: var(--lightgray);}
-  100% {background-color: var(--brown);}
+  0% {
+    background-color: var(--brown);
+  }
+
+  50% {
+    background-color: var(--lightgray);
+  }
+
+  100% {
+    background-color: var(--brown);
+  }
 }
 
 /*================================================================
@@ -51,7 +60,8 @@ body {
   font-family: "LudwigPro-Normal";
 }
 
-body.home:after, body.project:after {
+body.home:after,
+body.project:after {
   position: fixed;
   content: '';
   top: 0;
@@ -63,9 +73,11 @@ body.home:after, body.project:after {
   pointer-events: none;
   z-index: -100;
 }
+
 body.home:after {
   animation: colorCycle 8s ease-in-out infinite;
 }
+
 body.project:after {
   animation: color 5s reverse;
 }
@@ -107,11 +119,14 @@ a[href]:hover {
 }
 
 .randomLink {
+  font-size: 20px;
+}
+
+.randomLink.fixed {
   position: fixed;
   right: var(--margin);
   top: var(--margin);
   transform: translateY(-9px); /* Optical Correction */
-  font-size: 20px;
 }
 
 /*===================================================================
@@ -215,7 +230,7 @@ a[href]:hover {
   max-width: 100%;
 }
 
-[data-permalink=false] a{
+[data-permalink=false] a {
   cursor: default;
 }
 
@@ -294,7 +309,7 @@ a[href]:hover {
   margin-bottom: var(--margin)
 }
 
-[data-book=true] .single-post--content picture:first-of-type{
+[data-book=true] .single-post--content picture:first-of-type {
   margin-top: -.8vw
 }
 
@@ -340,8 +355,13 @@ a[href]:hover {
 ===============================================================*/
 
 @keyframes fade-in {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .overlay {
@@ -356,7 +376,7 @@ a[href]:hover {
   z-index: 5000;
 }
 
-overlay.no-animation img{
+overlay.no-animation img {
   animation: none;
   opacity: 1;
 }
@@ -372,6 +392,7 @@ overlay.no-animation img{
   animation: fade-in both 1000ms;
   animation-delay: 1000ms;
 }
+
 .overlay.active {
   opacity: 1;
 }
