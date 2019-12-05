@@ -56,7 +56,7 @@ function init() {
 
 var overlayCounter = 1;
 function addOverlay() {
-    if (overlayCounter <= 12) {
+    if (overlayCounter <= 18) {
         let url = `/assets/overlays/oliver-boulton-website-path-${overlayCounter}.png`
         let img = document.createElement('img')
         img.setAttribute('src', url)
