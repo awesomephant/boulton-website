@@ -13,7 +13,7 @@ bodyClass: home
 	{% if post.data.title == "Letter-like"%}
 	<li class='post'>
 		<a href='#1' class='post-title randomImageTitle button'>
-			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+			<h2>{{post.data.title}}. <span class='post-subtitle'>{{post.data.subtitle}}</span></h2>
 		</a>
 		{% set first = post.data["featured-images"] | first%}
 		<div class="post-images randomImage"><img class='post-list-image' style="max-width: {{first.width}}%"
@@ -24,11 +24,11 @@ bodyClass: home
 		<div class="anchor" id='{{post.data.title | urlencode }}'></div>
 		{% if post.data.file %}
 		<a class='post-title button' href='{{post.data.file}}'>
-			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+			<h2>{{post.data.title}}. <span class='post-subtitle'>{{post.data.subtitle}}</span></h2>
 		</a>
 		{% else %}
 		<a class='post-title button' {% if post.data.permalink != false %}href='{{post.url}}' {% endif %}>
-			<h2>{{post.data.title}}. {{post.data.subtitle}}</h2>
+			<h2>{{post.data.title}}. <span class='post-subtitle'>{{post.data.subtitle}}</span></h2>
 		</a>
 		{% endif %}
 		<div class="post-images">

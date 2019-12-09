@@ -183,6 +183,16 @@ a[href]:hover {
   display: inline-block;
 }
 
+.post-subtitle {
+  display: none;
+}
+
+@media (min-width: 30rem){
+  .post-subtitle {
+    display: inline;
+  }
+}
+
 .post-images {
   padding-left: var(--margin-small);
   padding-right: var(--margin-small);
