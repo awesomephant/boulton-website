@@ -18,13 +18,20 @@ hidden = false;
 function init() {
     const randomLinks = document.querySelectorAll('.randomLink')
     container = document.querySelector('.overlay')
+    console.log(projects)
+    for (let i = 0; i < projects.length; i++) {
+        if (window.location.pathname === projects[i]){
+            console.log('removed ' + projects[i])
+            projects.splice(i, 1)
+        }
+    }
     for (let i = 0; i < randomLinks.length; i++) {
         let link = randomLinks[i];
         console.log(link)
         console.log(projects)
+
         link.setAttribute('href', projects[gri(0, projects.length - 2)])
     }
-
 
     // Set the name of the hidden property and the change event for visibility
     if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
