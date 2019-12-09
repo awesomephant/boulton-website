@@ -9,11 +9,7 @@ featured-images:
     -   url: OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_6.png
         width: 100
 ---
-<style>
-    .single-post--content img {
-        margin-bottom: 8px;
-    }
-</style>
+
 
 {% sticky %}
 

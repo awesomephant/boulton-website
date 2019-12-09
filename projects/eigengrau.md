@@ -34,8 +34,8 @@ Offset, 270 × 215mm<br>
 {% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_12.png", alt="", width="70%"  ,   align="right" %}
 {% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_24.png", alt="", width="70%"  ,   align="left" %}
 {% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_1.png",  alt="", width="70%"  ,   align="right" %}
-{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_a.png", alt="", width="70%"  ,   align="left" %}  
-{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_3.png", alt="", width="70%"  ,   align="right" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_3.png", alt="", width="70%"  ,   align="left" %}
+{% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_y.png", alt="", width="70%"  ,   align="right" %}  
 {% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_13.png", alt="", width="70%"  ,   align="left" %}  
 {% image src="OLIVER_BOULTON_JONITO_AERTS_ARGUELLES_WERKPLAATS_TYPOGRAFIE_EIGENGRAU_c.png",  alt="", width="70%"  ,   align="right" %}
 

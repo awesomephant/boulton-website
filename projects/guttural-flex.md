@@ -30,12 +30,10 @@ Guttural Flex. Sculptures, Acrylic on Steel. The BOX, Werkplaats Typografie, 201
 {% image align="right" , src="OLIVER_BOULTON_GUTTURAL_FLEX_4.jpg", width="50%",  alt="" %}
 {% image align="left"  , src="OLIVER_BOULTON_GUTTURAL_FLEX_5.jpg", width="79.3%",alt="" %}
 
-A line to touch, feel and choreograph the body through the building.  
-Supporting and obstructing the flow of peoples patterns;  
-Drawing between the physical process of writing and reading.  
-Flesh in colour these letter-likes or desire paths;  
-Begin from the industry standard of a six meter steel line,  
-I burn away at the skin until an orange glow,  
-Then folding, creasing and cracking the skin,  
-Leaving dexterous, hand written, durational traces.  
-Choreographing, guiding, bridging, pulling, stopping, starting the body.
+A line to touch, choreograph and feel the flow through rooms.<br/>
+Flesh in colour these letter-likes or desire paths;<br/>
+Begin from the industry standard of a six meter steel line.<br/>
+I burn away at the skin until an orange glow;<br/>
+Folding, creasing, cracking the skin,<br/>
+Leaving dexterous, hand written, durational traces.<br/>
+Guiding, bridging, pulling, starting, stopping the body.
