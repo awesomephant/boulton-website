@@ -57,7 +57,7 @@
 
 body {
   background-color: var(--brown);
-  font-family: "LudwigPro-Normal";
+  font-family: "LudwigPro-Normal", 'Times New Roman', Times, serif;
 }
 
 body.home:after,
@@ -120,6 +120,7 @@ a[href]:hover {
 
 .randomLink {
   font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .randomLink.fixed {
