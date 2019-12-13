@@ -13,7 +13,7 @@ featured-images:
 
 {% sticky %}
 
- Guttural Flex [echo]. Sculptures, Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, (Pictures by Franziska Schulz), 2018. 
+Guttural Flex [echo]. Sculptures, Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, (Photographs by Franziska Schulz), 2018. 
  
 {% endsticky %}
 

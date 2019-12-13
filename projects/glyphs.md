@@ -3,7 +3,7 @@ tags: project
 layout: project
 title: Glyph(s)
 date: 1006-01-01
-subtitle: Sculptures, WT in LA, Hoffmitz Milken Center for Typography, Los Angeles, 2017.
+subtitle: Sculptures, Maps to the Stars, Hoffmitz Milken Center for Typography, Los Angeles, 2017.
 favicon: favicon-10
 featured-images: 
     -   url: OLIVER_BOULTON_GLYPHS_HMCT_WT_1.jpg
@@ -13,7 +13,7 @@ featured-images:
 
 {% sticky %}
 
- Glyph(s). Sculptures, Acrylic on Steel, Wood and Concrete. WT in LA, Hoffmitz Milken Center for Typography, Los Angeles, (Pictures by Joshua White), 2017.
+Glyph(s). Sculptures, Acrylic on Steel, Wood and Concrete. Maps to the Stars, Hoffmitz Milken Center for Typography, Los Angeles, (Photographs by Joshua White), 2017.
 
 {% endsticky %}
 

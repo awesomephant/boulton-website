@@ -12,7 +12,7 @@ featured-images:
 
 {% sticky %}
 
- Footnotes. Text, Published by Diorama Revue No.2—Geometric City, 2019. 
+Footnotes. Text, Published by Diorama Revue No.2—Geometric City, 2019. 
 
 {% endsticky %}
 

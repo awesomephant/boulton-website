@@ -10,22 +10,23 @@ featured-images:
         width: 100
 ---
 
-<style>
-    .single-post--content img {
-        margin-bottom: -14px;
-    }
-</style>
+
 
 {% sticky %}
 
- A Glib Remark, A Fragment or Unfinished Phrase. Sculptures, Steel. 100 × 20 mm, 2018.
+A Glib Remark, A Fragment or Unfinished Phrase. Sculptures, Steel. 100 × 20 mm, 2018.
 
 {% endsticky %}
 
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_6.jpg", width="100%", alt=""  %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_7.jpg", width="100%", alt=""  %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_8.jpg", width="100%", alt=""  %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_9.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_1.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_2.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_3.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_4.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_5.jpg", width="100%", alt="" %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_6.jpg", width="100%", alt="" %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_7.jpg", width="100%", alt="" %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_8.jpg", width="100%", alt="" %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_9.jpg", width="100%", alt="" %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_10.jpg", width="100%", alt="" %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_11.jpg", width="100%", alt="" %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_12.jpg", width="100%", alt="" %}
@@ -36,7 +37,3 @@ featured-images:
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_17.jpg", width="100%", alt="" %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_18.jpg", width="100%", alt="" %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_19.jpg", width="100%", alt="" %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_20.jpg", width="100%", alt="" %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_21.jpg", width="100%", alt="" %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_22.jpg", width="100%", alt="" %}
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_24.jpg", width="100%", alt="" %}
