@@ -9,7 +9,7 @@ const imageDest = '_site/assets/images/'
 const sizes = [2000, 1000, 500]
 
 gulp.task('images', () =>
-    gulp.src('assets/images/*.{jpg,jpeg,JPG,JPEG,png,PNG}')
+    gulp.src('assets/**/*.{jpg,jpeg,JPG,JPEG,png,PNG}')
         .pipe(srcset([
             {
                 processing: {
