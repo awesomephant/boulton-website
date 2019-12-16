@@ -3,7 +3,7 @@ tags: project
 layout: project
 title: A Glib Remark, A Fragment or Unfinished Phrase
 date: 1010-01-10
-subtitle: Sculptures, 2018.
+subtitle: Steel, 2018.
 favicon: favicon-5
 featured-images:
     -   url: OLIVER_BOULTON_A_GLIB_REMARK_2.png
@@ -14,11 +14,11 @@ featured-images:
 
 {% sticky %}
 
-A Glib Remark, A Fragment or Unfinished Phrase. Sculptures, Steel. 100 × 20 mm, 2018.
+A Glib Remark, A Fragment or Unfinished Phrase. Steel. 100 × 20mm, 2018.
 
 {% endsticky %}
 
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_1.jpg", width="100%", alt=""  %}
+{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_.jpg", width="100%", alt=""  %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_2.jpg", width="100%", alt=""  %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_3.jpg", width="100%", alt=""  %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_4.jpg", width="100%", alt=""  %}

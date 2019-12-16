@@ -3,7 +3,7 @@ tags: project
 layout: project
 title: Guttural Flex [echo]
 date: 1011-01-01
-subtitle: Sculptures, As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, 2018.
+subtitle: Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, 2018.
 favicon: favicon-4
 featured-images: 
     -   url: OLIVER_BOULTON_GUTTURAL_FLEX_ECHO_6.png
@@ -13,7 +13,7 @@ featured-images:
 
 {% sticky %}
 
-Guttural Flex [echo]. Sculptures, Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, (Photographs by Franziska Schulz), 2018. 
+Guttural Flex [echo]. Acrylic on Steel. As Nostalgia Meets Time-Pressure, Mediamatic, Netherlands, (Photographs by Franziska Schulz), 2018. 
  
 {% endsticky %}
 

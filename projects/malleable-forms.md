@@ -3,7 +3,7 @@ tags: project
 layout: project
 date: 1000-01-01
 title: Malleable Forms
-subtitle: Letterpress Print. Edition of 26, 594 × 841mm, 2016.
+subtitle: Letterpress Print. Edition of 26, 594 × 841mm, 2015.
 permalink: false
 featured-images:
     -   url: Oliver_Boulton__malleable-forms.png
@@ -11,7 +11,7 @@ featured-images:
 ---
 {% sticky %}
 
-Malleable Forms. C-Type and Letterpress Print. Edition of 26, 594 × 841 mm, 2016.
+Malleable Forms. C-Type and Letterpress Print. Edition of 26, 594 × 841 mm, 2015.
 
 {% endsticky %}
 

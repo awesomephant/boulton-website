@@ -4,7 +4,7 @@ layout: project
 title: Top/Top, Liam Magee
 date: 1001-01-01
 isBook: true
-subtitle: Book, Published by Camberwell Press, 2015.
+subtitle: Published by Camberwell Press, 2015.
 favicon: favicon-11
 featured-images:
     -   url: OLIVER_BOULTON_LIAM_MAGEE_CAMBERWELL_PRESS_TOPTOP_8.png

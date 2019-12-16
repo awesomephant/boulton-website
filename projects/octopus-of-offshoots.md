@@ -2,7 +2,7 @@
 tags: project
 layout: project
 title: Octopus of Offshoots
-subtitle: Book, Published by ArtEZ Press, 2019.
+subtitle: Published by Werkplaats Typografie and ArtEZ Press, 2019.
 favicon: favicon-3
 date: 1013-01-01
 isBook: true

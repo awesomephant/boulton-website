@@ -2,7 +2,7 @@
 tags: project
 layout: project
 title: Walking on Splinters, WT Papier
-subtitle: Book, Published by Werkplaats Typografie, 2016.
+subtitle: Published by Werkplaats Typografie, 2016.
 favicon: favicon-9
 date: 1005-01-01
 isBook: true

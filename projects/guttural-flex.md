@@ -2,7 +2,7 @@
 tags: project
 layout: project
 title: Guttural Flex
-subtitle: Sculptures, The BOX, Werkplaats Typografie, Netherlands, 2018.
+subtitle: Acrylic on Steel. The BOX, Werkplaats Typografie, Netherlands, 2018.
 favicon: favicon-2
 date: 1014-01-01
 featured-images:
@@ -18,7 +18,7 @@ featured-images:
 
 {% sticky %}
 
-Guttural Flex. Sculptures, Acrylic on Steel. The BOX, Werkplaats Typografie, 2018.
+Guttural Flex. Acrylic on Steel. The BOX, Werkplaats Typografie, Netherlands, 2018.
 
 {% endsticky %}
 
@@ -31,7 +31,7 @@ Guttural Flex. Sculptures, Acrylic on Steel. The BOX, Werkplaats Typografie, 201
 {% image align="center"  , src="OLIVER_BOULTON_GUTTURAL_FLEX_5.jpg", width="79.3%",alt="" %}
 
 
-A line to touch / feel and choreograph the flow through rooms<br/>
+A line to touch / feel / choreograph the flow through rooms<br/>
 Flesh in colour these letter-likes or desire paths <br/>
 Begin from the industry standard of a six meter steel line<br/>
 I burn away until an orange glow / folding / creasing / cracking <br/>

@@ -2,7 +2,7 @@
 tags: project
 layout: project
 title: Perspectives, Paulina Korobkiewicz
-subtitle: Book, Published by Camberwell Press, 2017.
+subtitle: Published by Camberwell Press, 2017.
 favicon: favicon-8
 date: 1003-01-01
 isBook: true
