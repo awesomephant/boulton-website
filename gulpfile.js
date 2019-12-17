@@ -5,7 +5,7 @@ const mozjpeg = require('imagemin-mozjpeg');
 const optipng = require('imagemin-optipng');
 const pngquant = require('imagemin-pngquant');
 
-const imageDest = '_site/assets/images/'
+const imageDest = '_site/assets/'
 const sizes = [2000, 1000, 500]
 
 gulp.task('images', () =>
