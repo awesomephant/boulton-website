@@ -21,14 +21,11 @@ function init() {
     console.log(projects)
     for (let i = 0; i < projects.length; i++) {
         if (window.location.pathname === projects[i]){
-            console.log('removed ' + projects[i])
             projects.splice(i, 1)
         }
     }
     for (let i = 0; i < randomLinks.length; i++) {
         let link = randomLinks[i];
-        console.log(link)
-        console.log(projects)
 
         link.setAttribute('href', projects[gri(0, projects.length - 2)])
     }
@@ -149,6 +146,7 @@ window.addEventListener('load', function () {
     if (firstImage && firstImage.getAttribute('data-align') != 'right') {
         if (window.matchMedia('(min-width: 40rem)').matches) {
             container.style.paddingTop = `${copy.offsetHeight + 50}px`;
+            container.classList.remove('images-loading')
         }
     }
 })
