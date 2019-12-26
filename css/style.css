@@ -392,7 +392,6 @@ a[href]:hover {
   opacity: 0;
   transition: 600ms;
   z-index: 5000;
-  display: none !important; /* Temoporary */
 }
 
 overlay.no-animation img {
