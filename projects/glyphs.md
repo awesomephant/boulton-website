@@ -13,7 +13,7 @@ featured-images:
 
 {% sticky %}
 
-Glyph(s). Acrylic on Steel, Wood and Concrete. Maps to the Stars, Hoffmitz Milken Center for Typography, Los Angeles, (Photographs by Joshua White), 2017.
+Glyph(s). Acrylic on Steel, Wood and Concrete, Variable Dimensions. Maps to the Stars, Hoffmitz Milken Center for Typography, Los Angeles, (Photographs by Joshua White), 2017.
 
 {% endsticky %}
 
