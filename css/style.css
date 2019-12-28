@@ -304,6 +304,12 @@ a[href]:hover {
 
 .single-post--content picture {
   margin-bottom: 8px;
+  transition: 200ms;
+}
+@media (min-width: 40rem){
+  .single-post--content.images-loading picture {
+    opacity: 0;
+  }
 }
 
 .single-post--content img {
@@ -386,7 +392,6 @@ a[href]:hover {
   opacity: 0;
   transition: 600ms;
   z-index: 5000;
-  display: none !important; /* Temoporary */
 }
 
 overlay.no-animation img {

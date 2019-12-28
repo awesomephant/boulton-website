@@ -51,4 +51,9 @@ See ```perspectives.md``` for usage examples of all of these.
 
 ## Deploying the site
 
-Using an FTP program (or whatever method you prefer), transfer the contents of the ```_site``` directory to your hosting provider.
+Using an FTP program (such as Filezilla), transfer the contents of the ```_site``` directory to your hosting provider.
+
+## To do
+- [x] Hide project images during layout adjustment
+- [x] Re-enable overlay glyphs
+- [] Make sure GA works correctly

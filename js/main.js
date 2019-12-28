@@ -4,6 +4,9 @@
 
 const delayBetweenOverlays = 10; // Seconds
 const activateOverlayAfter = 12; // Seconds
+const totalOverlayPaths = 8; // Seconds
+const imagesPerOverlayPath = 5; // Seconds
+
 
 function gri(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,17 +21,13 @@ hidden = false;
 function init() {
     const randomLinks = document.querySelectorAll('.randomLink')
     container = document.querySelector('.overlay')
-    console.log(projects)
     for (let i = 0; i < projects.length; i++) {
         if (window.location.pathname === projects[i]){
-            console.log('removed ' + projects[i])
             projects.splice(i, 1)
         }
     }
     for (let i = 0; i < randomLinks.length; i++) {
         let link = randomLinks[i];
-        console.log(link)
-        console.log(projects)
 
         link.setAttribute('href', projects[gri(0, projects.length - 2)])
     }
@@ -57,14 +56,32 @@ function init() {
         randomImage.addEventListener('click', loadRandomImage)
         randomImageTitle.addEventListener('click', loadRandomImage)
     }
-
     window.setInterval(tick, 1000)
+    window.addEventListener('mousemove', function (e) {
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                handleMouseMove();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+    window.addEventListener('scroll', function (e) {
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
 }
 
 var overlayCounter = 1;
+var currentOverlayPath = 1;
 function addOverlay() {
-    if (overlayCounter <= 18) {
-        let url = `/assets/overlays/oliver-boulton-website-path-${overlayCounter}.png`
+    if (overlayCounter <= imagesPerOverlayPath) {
+        let url = `/assets/overlays/${currentOverlayPath}/oliver-boulton-website-path-${overlayCounter}@2000w.png`
         let img = document.createElement('img')
         img.setAttribute('src', url)
         container.appendChild(img)
@@ -82,6 +99,7 @@ function handleVisibilityChange() {
     if (document[hidden]) {
         window.clearInterval(overlayLoop)
         overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
+        currentOverlayPath = gri(1, totalOverlayPaths)
         container.classList.add('active')
         container.classList.add('no-animation')
     } else {
@@ -95,7 +113,7 @@ function clearOverlay() {
     window.setTimeout(function () {
         container.innerHTML = '';
         overlayCounter = 1;
-    }, 1000)
+    }, 500)
 }
 
 function tick() {
@@ -103,6 +121,7 @@ function tick() {
     if (inactiveTime > activateOverlayAfter && inactive === false) {
         inactive = true;
         container.classList.add('active')
+        currentOverlayPath = gri(1, totalOverlayPaths)
         overlayLoop = window.setInterval(addOverlay, delayBetweenOverlays * 1000)
     }
 }
@@ -123,25 +142,6 @@ function handleMouseMove() {
     window.clearInterval(overlayLoop)
 }
 
-window.addEventListener('mousemove', function (e) {
-    if (!ticking) {
-        window.requestAnimationFrame(function () {
-            handleMouseMove();
-            ticking = false;
-        });
-        ticking = true;
-    }
-});
-window.addEventListener('scroll', function (e) {
-    if (!ticking) {
-        window.requestAnimationFrame(function () {
-            handleScroll();
-            ticking = false;
-        });
-        ticking = true;
-    }
-});
-
 window.addEventListener('load', function () {
     let firstImage = document.querySelector('.single-post--content picture');
     let copy = document.querySelector('.sticky');
@@ -149,6 +149,7 @@ window.addEventListener('load', function () {
     if (firstImage && firstImage.getAttribute('data-align') != 'right') {
         if (window.matchMedia('(min-width: 40rem)').matches) {
             container.style.paddingTop = `${copy.offsetHeight + 50}px`;
+            container.classList.remove('images-loading')
         }
     }
 })

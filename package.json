@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --quiet"
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "build": "npx @11ty/eleventy"
   },
   "author": "Max Kohler",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
     "gulp-srcset": "^2.3.1",
-    "gulp": "*", 
+    "gulp": "*",
     "gulp-using": "*",
     "gulp-changed": "*",
     "imagemin-mozjpeg": "*",
