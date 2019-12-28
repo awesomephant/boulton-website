@@ -150,5 +150,7 @@ window.addEventListener('load', function () {
             container.style.paddingTop = `${copy.offsetHeight + 50}px`;
             container.classList.remove('images-loading')
         }
+    } else {
+        container.classList.remove('images-loading')
     }
 })
