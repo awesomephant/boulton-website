@@ -127,7 +127,7 @@ a[href]:hover {
   position: fixed;
   right: var(--margin);
   top: var(--margin);
-  transform: translateY(-9px); /* Optical Correction */
+  transform: translateY(-10px); /* Optical Correction */
 }
 
 /*===================================================================
@@ -138,7 +138,7 @@ a[href]:hover {
   display: flex;
   justify-content: space-between;
   padding: var(--margin-small);
-  margin-top: -4rem;
+  margin-top: -5.5rem;
 }
 
 @media (min-width: 40rem) {

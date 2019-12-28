@@ -2,7 +2,7 @@
 tags: project
 layout: project
 title: In Homage to Christopher Alexander, The Way a Map in Your Mind Works
-subtitle: Lightbox, 2018.
+subtitle: Lightbox, Vinyl on Plexiglass, 2018.
 favicon: favicon-7
 date: 1008-01-01
 featured-images: 
@@ -12,7 +12,7 @@ featured-images:
 
 {% sticky %}
 
-In Homage to Christopher Alexander, The Way a Map in Your Mind Works. Lightbox, 2018.
+In Homage to Christopher Alexander, The Way a Map in Your Mind Works. Lightbox, Vinyl on Plexiglass, 100 × 85cm, 2018.
 
 {% endsticky %}
 

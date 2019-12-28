@@ -18,13 +18,13 @@ featured-images:
 
 {% sticky %}
 
-Guttural Flex. Acrylic on Steel. The BOX, Werkplaats Typografie, Netherlands, 2018.
+Guttural Flex. Acrylic on Steel, Variable Dimensions. The BOX, Werkplaats Typografie, Netherlands, 2018.
 
 {% endsticky %}
 
 {% image align="left"  , src="OLIVER_BOULTON_GUTTURAL_FLEX_6.jpg", width="69%" , alt="" %}
 {% image align="right" , src="OLIVER_BOULTON_GUTTURAL_FLEX_10.png", width="49.3%" ,alt="" %}
-{% image align="center" , src="OLIVER_BOULTON_GUTTURAL_FLEX_9.jpg", width="79.3%",alt="" %}
+{% image align="center" , src="OLIVER_BOULTON_GUTTURAL_FLEX_9.JPG", width="79.3%",alt="" %}
 {% image align="left"  , src="OLIVER_BOULTON_GUTTURAL_FLEX_7.png", width="49.3%",  alt="" %}
 {% image align="center", src="OLIVER_BOULTON_GUTTURAL_FLEX_3.jpg", width="79.3%",alt="" %}
 {% image align="right" , src="OLIVER_BOULTON_GUTTURAL_FLEX_4a.png", width="49.3%",  alt="" %}

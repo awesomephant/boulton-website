@@ -3,9 +3,10 @@
 //===============
 
 const delayBetweenOverlays = 10; // Seconds
-const activateOverlayAfter = 10; // Seconds
+const activateOverlayAfter = 12; // Seconds
 const totalOverlayPaths = 8; // Seconds
 const imagesPerOverlayPath = 5; // Seconds
+
 
 function gri(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;

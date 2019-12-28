@@ -18,7 +18,7 @@ A Glib Remark, A Fragment or Unfinished Phrase. Steel. 100 × 20mm, 2018.
 
 {% endsticky %}
 
-{% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_.jpg", width="100%", alt=""  %}
+
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_2.jpg", width="100%", alt=""  %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_3.jpg", width="100%", alt=""  %}
 {% image align="left", src="OLIVER_BOULTON_A_GLIB_REMARK_4.jpg", width="100%", alt=""  %}
