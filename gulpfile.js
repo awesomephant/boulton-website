@@ -18,9 +18,15 @@ gulp.task('images', () =>
                     }
                 },
                 optimization: {
+                    jpg:  mozjpeg({
+                        quality: 90
+                    }),
+                    png:  pngquant({
+                        quality: [.7, .9]
+                    }),
                 },
                 width: sizes,
-                skipOptimization: true,
+                skipOptimization: false,
             }
         ]))
         .pipe(using({ prefix: 'Writing', color: 'yellow' }))
